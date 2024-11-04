@@ -42,7 +42,33 @@
       </div>
     </nav>
     <main>
-      <div class="container d-flex flex-column align-items-center"></div>
+      <div class="container d-flex flex-column align-items-center">
+        <img src="img/Logo.png" alt="logo" class="w-25 mb-3">
+        <h2>Form Validation</h2>
+        <p class="lead text-center">Input your credentials:</p>
+        <form action="$_SERVER['PHP_SELF']" method="post" class="mt-4 w-75">
+            <div class="mb-3">
+                <label for="name" class="form-label">User Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your user name">
+                <div id="validationServerFeedback" class="invalid-feedback">
+                    Please provide a valid user name.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your user name">
+                <div id="validationServerFeedback" class="invalid-feedback">
+                    Please provide a valid user name.
+                </div>
+            </div>
+            <div class="mb-3">
+                <center>
+                    <input type="submit" value="Login" class="btn btn-dark w-45" name="login">
+                    <input type="submit" class="btn btn-dark w-45" name="submit" value="Signup">
+                </center>
+            </div>
+        </form>
+      </div>
     </main>
     <footer class="text-center mt-5">&copy; Daryl Tiquio - 2024</footer>
   </body>
